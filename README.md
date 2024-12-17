@@ -16,9 +16,19 @@ cp .env.example .env
 ```
 
 ## Package Dist
+### setup.py
+```python
+from setuptools import setup, find_packages
+setup(
+    name="my_project",          # Replace with your project name
+    version="0.1.0",
+    packages=find_packages(),   # Automatically includes packages (like `src`)
+    install_requires=[],        # Add project dependencies here
+)
+````
 ### install package locally
 ```bash
-pip install .
+pip install -e .
 ```
 
 ## GitHub
