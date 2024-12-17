@@ -15,7 +15,9 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-## Package Dist
+
+## Package Dir
+
 ### setup.py
 ```python
 from setuptools import setup, find_packages
@@ -26,10 +28,17 @@ setup(
     install_requires=[],        # Add project dependencies here
 )
 ````
+
 ### install package locally
 ```bash
 pip install -e .
 ```
+
+### add init to folder structure
+```text
+__init__.py
+```
+
 
 ## GitHub
 ### force a reconcile merge
